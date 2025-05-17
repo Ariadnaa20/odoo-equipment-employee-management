@@ -5,7 +5,7 @@
     'description': "Gestió d'equips, préstecs, empleats i enviament d'informes.",
     'author': "Ariadna Pascual",
     'category': 'Tools',
-    'license': 'LGPL-3',
+    'license': 'OPL-1',
     'depends': ['base', 'mail'],
     'data': [
         'security/security.xml',

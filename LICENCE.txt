@@ -1,0 +1,13 @@
+Odoo Proprietary License v1.0
+
+This software and associated files (the "Software") may only be used (executed, modified, executed after modifications) if you have purchased a valid license from the author.
+
+The above permissions are granted for a single database per purchased license. The author reserves the right to modify the terms of the license from time to time.
+
+You may not publish, distribute, sublicense, or sell copies of the Software, or allow others to do so.
+
+This license is not compatible with the GNU General Public License or any other open-source license.
+
+For more details, please contact the author.
+
+(c) Ariadna Pascual Palau
