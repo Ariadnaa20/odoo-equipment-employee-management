@@ -57,10 +57,12 @@ Contacte: *ari.palau20@gmail.com*
 
 ---
 
-## 💡 Llicència
+## 📄 Llicència
 
-Aquest mòdul es pot vendre, distribuir o modificar segons els teus interessos.  
-Contacta si vols una versió a mida per la teva empresa.
+Aquest mòdul es distribueix sota la llicència **Odoo Proprietary License v1.0 (OPL-1)**.  
+No està permès copiar, redistribuir ni modificar aquest codi sense autorització expressa de l’autora.
+
+(c) Ariadna Pascual Palau
 
 ---
 
