@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="model_gestion_prestamo_mail_wizard" model="ir.model">
+        <field name="name">gestion.prestamo.mail.wizard</field>
+        <field name="model">gestion.prestamo.mail.wizard</field>
+        <field name="state">base</field>
+    </record>
+</odoo>

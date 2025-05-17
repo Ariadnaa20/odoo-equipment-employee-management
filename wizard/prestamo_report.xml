@@ -1,0 +1,10 @@
+<odoo>
+    <record id="action_report_prestec" model="ir.actions.report">
+        <field name="name">Informe de Préstec</field>
+        <field name="model">gestion.prestamo</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">gestio_equips_empleats.prestamo_report_template</field>
+        <field name="report_file">gestio_equips_empleats.prestamo_report_template</field>
+        <field name="print_report_name">'Prestec_' + object.display_name</field>
+    </record>
+</odoo>

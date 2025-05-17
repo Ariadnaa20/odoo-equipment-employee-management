@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="prestamo_report_template">
+        <t t-call="web.basic_layout">
+            <t t-set="docs" t-value="doc_ids and env[doc_model].browse(doc_ids)"/>
+            <main class="page">
+                <t t-foreach="docs" t-as="prestec">
+
+                    <!-- Logo -->
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <img t-att-src="'/gestio_equips_empleats/static/description/icon.png'" style="max-height: 100px;"/>
+                    </div>
+
+                    <!-- Títol -->
+                    <h2 style="text-align: center; margin: 20px 0 30px 0;">Informe de Préstec</h2>
+
+                    <!-- Taula de dades -->
+                    <table style="width: 80%; margin: 0 auto 30px auto; border-collapse: collapse; font-size: 13px;">
+                        <tr style="height: 30px;">
+                            <td style="font-weight: bold; width: 30%;">Equip:</td>
+                            <td><t t-esc="prestec.equipo_id.display_name"/></td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td style="font-weight: bold;">Empleat:</td>
+                            <td><t t-esc="prestec.empleado_id.display_name"/></td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td style="font-weight: bold;">Data d'Inici:</td>
+                            <td><t t-esc="prestec.fecha_inicio"/></td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td style="font-weight: bold;">Data de Retorn:</td>
+                            <td><t t-esc="prestec.fecha_fin or '—'"/></td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td style="font-weight: bold;">Estat:</td>
+                            <td><t t-esc="prestec.estado"/></td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td style="font-weight: bold; vertical-align: top;">Observacions:</td>
+                            <td><t t-esc="prestec.observacions or '—'"/></td>
+                        </tr>
+                    </table>
+
+                    <!-- Data generació -->
+                    <div style="width: 80%; margin: 0 auto;">
+                        <p style="text-align: right;">
+                            <strong>Data de generació:</strong>
+                            <t t-esc="prestec.create_date.strftime('%d/%m/%Y') if prestec.create_date else ''"/>
+                        </p>
+                    </div>
+                    <!-- Signatura -->
+                    <div style="margin-top: 50px; width: 80%; margin-left: auto; margin-right: auto;">
+                        <p><strong>Signatura de l'Empleat:</strong></p>
+                        <t t-if="prestec.signature">
+                            <img t-att-src="'data:image/png;base64,%s' % prestec.signature.decode()" style="width:300px; height:auto;"/>
+                        </t>
+                        <t t-else="">
+                            <div style="border-bottom: 1px solid #000; height: 40px; width: 300px;"></div>
+                         </t>
+                    </div>
+                </t>
+            </main>
+        </t>
+    </template>
+</odoo>

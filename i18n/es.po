@@ -1,0 +1,486 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* gestio_equips_empleats
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20250127\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-15 13:30+0000\n"
+"PO-Revision-Date: 2025-04-15 13:30+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: gestio_equips_empleats
+#: model:ir.actions.report,print_report_name:gestio_equips_empleats.action_report_prestec
+msgid "'Prestec_' + object.display_name"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.prestamo_report_template
+msgid "<strong>Data de generació:</strong>"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.prestamo_report_template
+msgid "<strong>Signatura de l'Empleat:</strong>"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_prestamo__estado__activo
+msgid "Actiu"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:res.groups,name:gestio_equips_empleats.group_gestio_equips_admin
+msgid "Administrador Gestió"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_equipo_search
+msgid "Agrupar per"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_empleado__departament__altres
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_equipo__tipo__altre
+msgid "Altres"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model,name:gestio_equips_empleats.model_gestion_prestamo_mail_wizard
+msgid "Assistent per Enviar Informe de Préstec per Correu"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_equipo__tipo__auriculars
+msgid "Auriculars"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_busqueda_ia_form
+msgid "Buscar"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.actions.act_window,name:gestio_equips_empleats.action_busqueda_ia
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_busqueda_ia_form
+msgid "Buscar amb IA"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model,name:gestio_equips_empleats.model_gestion_busqueda_ia
+msgid "Buscar informació amb IA"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_busqueda_ia_form
+msgid "Cancelar"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_prestamo_mail_wizard_form
+msgid "Cancel·lar"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.ui.menu,name:gestio_equips_empleats.menu_gestio_equips_busqueda_ia
+msgid "Cerca amb IA"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_empleado__cognoms
+msgid "Cognoms"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:res.groups,name:gestio_equips_empleats.group_gestio_equips_consultor
+msgid "Consultor Gestió"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo_mail_wizard__email_to
+msgid "Correu Destinatari"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_busqueda_ia__create_uid
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_empleado__create_uid
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__create_uid
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo__create_uid
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo_mail_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_busqueda_ia__create_date
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_empleado__create_date
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__create_date
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo__create_date
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo_mail_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__fecha_alta
+msgid "Data d'Alta"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo__fecha_inicio
+msgid "Data d'Inici"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.prestamo_report_template
+msgid "Data d'Inici:"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo__fecha_fin
+msgid "Data de Retorn"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.prestamo_report_template
+msgid "Data de Retorn:"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_empleado__departament
+msgid "Departament"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__descripcion
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_equipo_form
+msgid "Descripció"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_busqueda_ia__display_name
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_empleado__display_name
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo_mail_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_equipo__estado__disponible
+msgid "Disponible"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_equipo_search
+msgid "Disponibles"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_equipo__estado__baixa
+msgid "Donat de Baixa"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_empleado__email
+msgid "Email"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model,name:gestio_equips_empleats.model_gestion_empleado
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo__empleado_id
+msgid "Empleat"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.prestamo_report_template
+msgid "Empleat:"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.actions.act_window,name:gestio_equips_empleats.action_empleado
+#: model:ir.ui.menu,name:gestio_equips_empleats.menu_gestio_equips_empleats
+msgid "Empleats"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_equipo__estado__mantenimiento
+msgid "En Manteniment"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_equipo__estado__prestado
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_equipo_search
+msgid "En Préstec"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_prestamo__estado__retrasado
+msgid "Endarrerit"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_prestamo_mail_wizard_form
+msgid "Enviar"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_prestamo_mail_wizard_form
+msgid "Enviar Informe per Correu"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_prestamo_form
+msgid "Enviar per Correu"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo__equipo_id
+msgid "Equip"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_equipo_form
+msgid "Equip Informàtic"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model,name:gestio_equips_empleats.model_gestion_equipo
+msgid "Equip informàtic"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.prestamo_report_template
+msgid "Equip:"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.actions.act_window,name:gestio_equips_empleats.action_equipo
+#: model:ir.actions.act_window,name:gestio_equips_empleats.action_gestion_equipo
+#: model:ir.ui.menu,name:gestio_equips_empleats.menu_gestio_equips_equipos
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_equipo_list
+msgid "Equips"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__estado
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo__estado
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_equipo_search
+msgid "Estat"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.prestamo_report_template
+msgid "Estat:"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_empleado__departament__finances
+msgid "Finances"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_empleado__foto
+msgid "Foto"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.ui.menu,name:gestio_equips_empleats.menu_gestio_equips_root
+msgid "Gestió d'Equips"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__prestamo_ids
+msgid "Historial de Préstecs"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_busqueda_ia__id
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_empleado__id
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__id
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo__id
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo_mail_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__imagen
+msgid "Imatge"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_prestamo_form
+msgid "Imprimir Informe"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.actions.report,name:gestio_equips_empleats.action_report_prestec
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.prestamo_report_template
+msgid "Informe de Préstec"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_empleado__departament__it
+msgid "Informàtica"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_busqueda_ia__write_uid
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_empleado__write_uid
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__write_uid
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo__write_uid
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo_mail_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_busqueda_ia__write_date
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_empleado__write_date
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__write_date
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo__write_date
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo_mail_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_empleado__departament__logistica
+msgid "Logística"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__marca
+msgid "Marca"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo_mail_wizard__message_body
+msgid "Missatge"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__modelo
+msgid "Model"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_equipo__tipo__monitor
+msgid "Monitor"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_empleado__name
+msgid "Nom"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__display_name
+msgid "Nom Visual"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__name
+msgid "Nom de l'Equip"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_equipo_form
+msgid "Nom de l'equip"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo__display_name
+msgid "Nom visual"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__numero_serie
+msgid "Núm. de Sèrie"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo__observacions
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_prestamo_form
+msgid "Observacions"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.prestamo_report_template
+msgid "Observacions:"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_equipo__tipo__portatil
+msgid "Portàtil"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_busqueda_ia__pregunta
+msgid "Pregunta"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_equipo__tipo__projector
+msgid "Projector"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_prestamo_mail_wizard__prestamo_id
+msgid "Préstec"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model,name:gestio_equips_empleats.model_gestion_prestamo
+msgid "Préstec de Dispositius"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.actions.act_window,name:gestio_equips_empleats.action_gestion_prestamo
+#: model:ir.actions.act_window,name:gestio_equips_empleats.action_prestamo
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_empleado__prestamo_ids
+#: model:ir.ui.menu,name:gestio_equips_empleats.menu_gestio_equips_prestecs
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_empleado_form
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_equipo_form
+msgid "Préstecs"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_equipo__tipo__raton
+msgid "Ratolí"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_empleado__departament__rrhh
+msgid "Recursos Humans"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_busqueda_ia__respuesta
+msgid "Resposta"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_prestamo__estado__devuelto
+msgid "Retornat"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields.selection,name:gestio_equips_empleats.selection__gestion_equipo__tipo__teclado
+msgid "Teclat"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_empleado__telefon
+msgid "Telèfon"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model_terms:ir.ui.view,arch_db:gestio_equips_empleats.view_equipo_search
+msgid "Tipus"
+msgstr ""
+
+#. module: gestio_equips_empleats
+#: model:ir.model.fields,field_description:gestio_equips_empleats.field_gestion_equipo__tipo
+msgid "Tipus d'Equip"
+msgstr ""

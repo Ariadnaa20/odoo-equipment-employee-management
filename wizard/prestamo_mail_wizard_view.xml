@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_prestamo_mail_wizard_form" model="ir.ui.view">
+        <field name="name">prestamo.mail.wizard.form</field>
+        <field name="model">gestion.prestamo.mail.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Enviar Informe per Correu">
+                <group>
+                    <field name="email_to"/>
+                    <field name="message_body" widget="text"/>
+                    <field name="prestamo_id" invisible="1"/>
+                </group>
+                <footer>
+                    <button string="Enviar" type="object" name="send_mail_with_report" class="btn-primary"/>
+                    <button string="Cancel·lar" special="cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
