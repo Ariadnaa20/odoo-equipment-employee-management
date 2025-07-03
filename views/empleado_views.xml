@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="view_empleado_list" model="ir.ui.view">
+        <field name="name">empleado.list</field>
+        <field name="model">gestion.empleado</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="cognoms"/>
+                <field name="departament"/>
+                <field name="email"/>
+                <field name="telefon"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_empleado_form" model="ir.ui.view">
+        <field name="name">empleado.form</field>
+        <field name="model">gestion.empleado</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="foto" widget="image"/>
+                    <group>
+                        <field name="name"/>
+                        <field name="cognoms"/>
+                        <field name="email"/>
+                        <field name="telefon"/>
+                        <field name="departament"/>
+                    </group>
+                    <notebook>
+                        <page string="Préstecs">
+                            <field name="prestamo_ids"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menú principal -->
+    <menuitem id="menu_gestio_equips_root"
+              name="Gestió d'Equips"
+              sequence="10"/>
+
+    <!-- Acció: Equips -->
+    <record id="action_equipo" model="ir.actions.act_window">
+        <field name="name">Equips</field>
+        <field name="res_model">gestion.equipo</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_gestio_equips_equipos"
+              name="Equips"
+              parent="menu_gestio_equips_root"
+              action="action_equipo"
+              sequence="20"/>
+
+    <!-- Acció: Préstecs -->
+    <record id="action_prestamo" model="ir.actions.act_window">
+        <field name="name">Préstecs</field>
+        <field name="res_model">gestion.prestamo</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_gestio_equips_prestecs"
+              name="Préstecs"
+              parent="menu_gestio_equips_root"
+              action="action_prestamo"
+              sequence="30"/>
+
+    <!-- Acció: Empleats -->
+    <record id="action_empleado" model="ir.actions.act_window">
+        <field name="name">Empleats</field>
+        <field name="res_model">gestion.empleado</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_gestio_equips_empleats"
+              name="Empleats"
+              parent="menu_gestio_equips_root"
+              action="action_empleado"
+              sequence="40"/>
+
+    <!-- ✅ Acció: Busqueda IA -->
+    <record id="action_busqueda_ia" model="ir.actions.act_window">
+        <field name="name">Buscar amb IA</field>
+        <field name="res_model">gestion.busqueda.ia</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <!-- ✅ Menú: Busqueda IA -->
+    <menuitem id="menu_gestio_equips_busqueda_ia"
+              name="Cerca amb IA"
+              parent="menu_gestio_equips_root"
+              action="action_busqueda_ia"
+              sequence="50"/>
+</odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Grup: Administrador de la Gestió -->
+        <record id="group_gestio_equips_admin" model="res.groups">
+            <field name="name">Administrador Gestió</field>
+        </record>
+
+        <!-- Grup: Consultor de la Gestió -->
+        <record id="group_gestio_equips_consultor" model="res.groups">
+            <field name="name">Consultor Gestió</field>
+        </record>
+    </data>
+</odoo>
