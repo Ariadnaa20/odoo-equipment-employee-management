@@ -26,6 +26,7 @@
     'installable': True,
     'application': True,
     'auto_install': False,
+    'images': ['static/description/banner.png'],
     'price': 99.99,
     'currency': 'EUR',
 }
