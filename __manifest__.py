@@ -1,6 +1,6 @@
 {
     'name': "Gestió d'Equips i Empleats",
-    'version': '1.0',
+    'version': '16.0',
     'summary': "Gestió d'equips informàtics i préstecs a empleats",
     'description': "Gestió d'equips, préstecs, empleats i enviament d'informes.",
     'author': "Ariadna Pascual",
