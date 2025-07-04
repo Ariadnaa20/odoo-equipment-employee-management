@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Vista Llista -->
+    <!-- List View -->
     <record id="view_equipo_list" model="ir.ui.view">
         <field name="name">equipo.list</field>
         <field name="model">gestion.equipo</field>
         <field name="arch" type="xml">
-            <list string="Equips">
+            <list string="Equipment">
                 <field name="display_name"/>
                 <field name="tipo"/>
                 <field name="estado"/>
@@ -15,31 +15,31 @@
         </field>
     </record>
 
-    <!-- Vista Formulari -->
+    <!-- Form View -->
     <record id="view_equipo_form" model="ir.ui.view">
         <field name="name">equipo.form</field>
         <field name="model">gestion.equipo</field>
         <field name="arch" type="xml">
-            <form string="Equip Informàtic">
+            <form string="Computer Equipment">
                 <sheet>
 
-                    <!-- Botó acció -->
+                    <!-- Action Button -->
                     <header>
                         <button name="action_print_etiqueta_qr"
-                                string="Imprimir Etiqueta"
+                                string="Print Label"
                                 type="object"
                                 class="btn-primary"/>
                     </header>
 
-                    <!-- Imatge -->
+                    <!-- Image -->
                     <field name="imagen" widget="image" class="oe_avatar"/>
                     <div class="oe_title">
                         <h1>
-                            <field name="name" placeholder="Nom de l'equip"/>
+                            <field name="name" placeholder="Equipment Name"/>
                         </h1>
                     </div>
 
-                    <!-- Dades -->
+                    <!-- Data -->
                     <group>
                         <group>
                             <field name="marca"/>
@@ -56,10 +56,10 @@
                     </group>
 
                     <notebook>
-                        <page string="Descripció">
+                        <page string="Description">
                             <field name="descripcion"/>
                         </page>
-                        <page string="Préstecs">
+                        <page string="Loans">
                             <field name="prestamo_ids"/>
                         </page>
                     </notebook>
@@ -68,7 +68,7 @@
         </field>
     </record>
 
-    <!-- Vista Cercador -->
+    <!-- Search View -->
     <record id="view_equipo_search" model="ir.ui.view">
         <field name="name">equipo.search</field>
         <field name="model">gestion.equipo</field>
@@ -78,19 +78,19 @@
                 <field name="marca"/>
                 <field name="modelo"/>
                 <field name="numero_serie"/>
-                <filter string="Disponibles" name="disponible" domain="[('estado', '=', 'disponible')]"/>
-                <filter string="En Préstec" name="prestado" domain="[('estado', '=', 'prestado')]"/>
-                <group expand="0" string="Agrupar per">
-                    <filter string="Tipus" name="tipo" context="{'group_by': 'tipo'}"/>
-                    <filter string="Estat" name="estado" context="{'group_by': 'estado'}"/>
+                <filter string="Available" name="disponible" domain="[('estado', '=', 'disponible')]"/>
+                <filter string="On Loan" name="prestado" domain="[('estado', '=', 'prestado')]"/>
+                <group expand="0" string="Group by">
+                    <filter string="Type" name="tipo" context="{'group_by': 'tipo'}"/>
+                    <filter string="Status" name="estado" context="{'group_by': 'estado'}"/>
                 </group>
             </search>
         </field>
     </record>
 
-    <!-- Acció principal -->
+    <!-- Main Action -->
     <record id="action_gestion_equipo" model="ir.actions.act_window">
-        <field name="name">Equips</field>
+        <field name="name">Equipment</field>
         <field name="res_model">gestion.equipo</field>
         <field name="view_mode">list,form</field>
         <field name="search_view_id" ref="view_equipo_search"/>

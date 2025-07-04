@@ -22,8 +22,8 @@
             <form>
                 <sheet>
                     <header>
-                        <button name="action_print_report" string="Imprimir Informe" type="object" class="btn-primary"/>
-                        <button name="action_send_report_email" string="Enviar per Correu" type="object" class="btn-secondary"/>
+                        <button name="action_print_report" string="Print Report" type="object" class="btn-primary"/>
+                        <button name="action_send_report_email" string="Send by Email" type="object" class="btn-secondary"/>
                     </header>
                     <group>
                         <group>
@@ -38,7 +38,7 @@
                         </group>
                     </group>
                     <notebook>
-                        <page string="Observacions">
+                        <page string="Remarks">
                             <field name="observacions"/>
                         </page>
                     </notebook>

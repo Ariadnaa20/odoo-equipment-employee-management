@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Menú principal -->
+    <!-- Main Menu -->
     <menuitem id="menu_gestio_equips_root"
-              name="Gestió d'Equips"
+              name="Equipment Management"
               sequence="10"/>
 
-    <!-- Acció: Equips -->
+    <!-- Action: Equipment -->
     <record id="action_equipo" model="ir.actions.act_window">
-        <field name="name">Equips</field>
+        <field name="name">Equipment</field>
         <field name="res_model">gestion.equipo</field>
         <field name="view_mode">list,form</field>
     </record>
 
     <menuitem id="menu_gestio_equips_equipos"
-              name="Equips"
+              name="Equipment"
               parent="menu_gestio_equips_root"
               action="action_equipo"
               sequence="20"/>
 
-    <!-- Acció: Préstecs -->
+    <!-- Action: Loans -->
     <record id="action_prestamo" model="ir.actions.act_window">
-        <field name="name">Préstecs</field>
+        <field name="name">Loans</field>
         <field name="res_model">gestion.prestamo</field>
         <field name="view_mode">list,form</field>
     </record>
 
     <menuitem id="menu_gestio_equips_prestecs"
-              name="Préstecs"
+              name="Loans"
               parent="menu_gestio_equips_root"
               action="action_prestamo"
               sequence="30"/>
 
-    <!-- Acció: Empleats -->
+    <!-- Action: Employees -->
     <record id="action_empleado" model="ir.actions.act_window">
-        <field name="name">Empleats</field>
+        <field name="name">Employees</field>
         <field name="res_model">gestion.empleado</field>
         <field name="view_mode">list,form</field>
     </record>
 
     <menuitem id="menu_gestio_equips_empleats"
-              name="Empleats"
+              name="Employees"
               parent="menu_gestio_equips_root"
               action="action_empleado"
               sequence="40"/>
 
-    <!-- ✅ Acció: Busqueda IA -->
+    <!-- ✅ Action: AI Search -->
     <record id="action_busqueda_ia" model="ir.actions.act_window">
-        <field name="name">Buscar amb IA</field>
+        <field name="name">Search with AI</field>
         <field name="res_model">gestion.busqueda.ia</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
     </record>
 
-    <!-- ✅ Menú: Busqueda IA -->
+    <!-- ✅ Menu: AI Search -->
     <menuitem id="menu_gestio_equips_busqueda_ia"
-              name="Cerca amb IA"
+              name="AI Search"
               parent="menu_gestio_equips_root"
               action="action_busqueda_ia"
               sequence="50"/>

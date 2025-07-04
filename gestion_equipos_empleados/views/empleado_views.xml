@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-    <record id="view_empleado_list" model="ir.ui.view">
-        <field name="name">empleado.list</field>
+    <record id="view_employee_list" model="ir.ui.view">
+        <field name="name">employee.list</field>
         <field name="model">gestion.empleado</field>
         <field name="arch" type="xml">
-            <list>
-                <field name="name"/>
-                <field name="cognoms"/>
-                <field name="departament"/>
-                <field name="email"/>
-                <field name="telefon"/>
-            </list>
+            <tree string="Employees">
+                <field name="name" string="First Name"/>
+                <field name="cognoms" string="Last Name"/>
+                <field name="departament" string="Department"/>
+                <field name="email" string="Email"/>
+                <field name="telefon" string="Phone"/>
+            </tree>
         </field>
     </record>
 
-    <record id="view_empleado_form" model="ir.ui.view">
-        <field name="name">empleado.form</field>
+    <record id="view_employee_form" model="ir.ui.view">
+        <field name="name">employee.form</field>
         <field name="model">gestion.empleado</field>
         <field name="arch" type="xml">
-            <form>
+            <form string="Employee">
                 <sheet>
-                    <field name="foto" widget="image"/>
+                    <field name="foto" widget="image" string="Photo"/>
                     <group>
-                        <field name="name"/>
-                        <field name="cognoms"/>
-                        <field name="email"/>
-                        <field name="telefon"/>
-                        <field name="departament"/>
+                        <field name="name" string="First Name"/>
+                        <field name="cognoms" string="Last Name"/>
+                        <field name="email" string="Email"/>
+                        <field name="telefon" string="Phone"/>
+                        <field name="departament" string="Department"/>
                     </group>
                     <notebook>
-                        <page string="Préstecs">
+                        <page string="Loans">
                             <field name="prestamo_ids"/>
                         </page>
                     </notebook>

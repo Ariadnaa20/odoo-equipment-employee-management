@@ -12,15 +12,15 @@
                             <img t-att-src="'data:image/png;base64,%s' % equipo.qr_image.decode()" style="max-width: 150px;"/>
                         </t>
                         <t t-else="">
-                            <p style="color: gray;">Codi QR no disponible</p>
+                            <p style="color: gray;">QR code not available</p>
                         </t>
                     </div>
 
                     <table style="width: 60%; margin: 0 auto; font-size: 13px;">
-                        <tr><td><strong>Nom:</strong></td><td><t t-esc="equipo.name"/></td></tr>
-                        <tr><td><strong>Marca:</strong></td><td><t t-esc="equipo.marca"/></td></tr>
+                        <tr><td><strong>Name:</strong></td><td><t t-esc="equipo.name"/></td></tr>
+                        <tr><td><strong>Brand:</strong></td><td><t t-esc="equipo.marca"/></td></tr>
                         <tr><td><strong>Model:</strong></td><td><t t-esc="equipo.modelo"/></td></tr>
-                        <tr><td><strong>Núm. de sèrie:</strong></td><td><t t-esc="equipo.numero_serie"/></td></tr>
+                        <tr><td><strong>Serial Number:</strong></td><td><t t-esc="equipo.numero_serie"/></td></tr>
                     </table>
 
                 </t>
@@ -30,11 +30,11 @@
 
     <!-- Acció de l'informe -->
     <record id="action_etiqueta_equipo_qr" model="ir.actions.report">
-        <field name="name">Etiqueta Equip</field>
+        <field name="name">Equipment Label</field>
         <field name="model">gestion.equipo</field>
         <field name="report_type">qweb-pdf</field>
         <field name="report_name">gestio_equips_empleats.etiqueta_equipo_qr_template</field>
         <field name="report_file">gestio_equips_empleats.etiqueta_equipo_qr_template</field>
-        <field name="print_report_name">'Etiqueta_' + object.name</field>
+        <field name="print_report_name">'Label_' + object.name</field>
     </record>
 </odoo>
