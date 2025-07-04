@@ -1,27 +1,57 @@
+<style>
+  .oe_screenshot {
+    display: block;
+    margin: 15px auto;
+    max-width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px #ccc;
+  }
+
+  .oe_container ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .oe_container h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .oe_container p {
+    margin-bottom: 20px;
+  }
+
+  .centered-text {
+    text-align: center;
+  }
+</style>
+
 <section class="oe_container">
-  <h1 style="text-align:center; font-weight:bold; color:#4a148c;">
-    🎯 Equipment & Employee Management + AI Module (Odoo 18)
+  <h1 class="centered-text" style="font-weight:bold; color:#4a148c;">
+    Equipment & Employee Management + AI Module (Odoo 18)
   </h1>
-  <p style="text-align:center; color:#3949ab;">
+  <p class="centered-text" style="color:#3949ab;">
     A complete and intelligent solution to manage IT assets, employee assignments, loan tracking, and AI-powered insights.
   </p>
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#6a1b9a;">🔧 Key Functionalities</h2>
+  <h2 style="color:#6a1b9a;">Key Functionalities</h2>
   <ul>
-    <li>✅ Manage all your equipment and assign them to employees</li>
-    <li>✅ Generate PDF loan reports and send via email</li>
-    <li>✅ Integrated with OpenAI to assist with hardware-related questions</li>
-    <li>✅ User roles: Administrator vs Consultant with distinct permissions</li>
-    <li>✅ QR Code auto-generated for each equipment item</li>
-    <li>✅ Security configured via <code>security.xml</code> and <code>ir.model.access.csv</code></li>
-    <li>✅ Fully documented module (15-page PDF with install steps, code structure, AI integration, tests, QWeb, etc.)</li>
+    <li>Manage all your equipment and assign them to employees</li>
+    <li>Generate PDF loan reports and send via email</li>
+    <li>Employee Digital Signature</li>
+    <li>Integrated with OpenAI to assist with hardware-related questions</li>
+    <li>User roles: Administrator vs Consultant with distinct permissions</li>
+    <li>QR Code auto-generated for each equipment item</li>
+    <li>Security configured via <code>security.xml</code> and <code>ir.model.access.csv</code></li>
+    <li>Fully documented module (15-page PDF with install steps, code structure, AI integration, tests, QWeb, etc.)</li>
   </ul>
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#4a148c;">💻 Equipment Management</h2>
+  <h2 style="color:#4a148c;">Equipment Management</h2>
   <ul>
     <li>Track devices such as laptops, monitors, phones, tablets...</li>
     <li>Store brand, model, supplier, purchase date, specs, and notes</li>
@@ -33,7 +63,7 @@
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#4a148c;">👩‍💼 Employee Management</h2>
+  <h2 style="color:#4a148c;">Employee Management</h2>
   <ul>
     <li>Fully integrated with <code>hr.employee</code></li>
     <li>Visual overview of equipment assigned to each employee</li>
@@ -55,7 +85,7 @@
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#4a148c;">🤖 AI Assistant with OpenAI</h2>
+  <h2 style="color:#4a148c;">AI Assistant with OpenAI</h2>
   <ul>
     <li>OpenAI integration using your API Key</li>
     <li>Chat-style assistant to answer hardware or IT-related queries</li>
@@ -66,7 +96,7 @@
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#6a1b9a;">🔐 Security & Roles</h2>
+  <h2 style="color:#6a1b9a;">Security & Roles</h2>
   <ul>
     <li>Admin users: full access to create/edit/delete equipment and loans</li>
     <li>Consultant users: can only view assigned equipment and loans</li>
@@ -75,18 +105,18 @@
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#2e7d32;">✍️ Employee Digital Signature</h2>
+  <h2 style="color:#2e7d32;">Employee Digital Signature</h2>
   <ul>
     <li>Allows employees to digitally sign loan agreements</li>
     <li>Signature is stored as an image and linked to the loan record</li>
     <li>Visible in the loan form view and included in the PDF report</li>
     <li>Improves legal compliance and asset accountability</li>
   </ul>
+  <img src="firma.png" alt="Digital Signature Example" class="oe_screenshot">
 </section>
 
-
 <section class="oe_container">
-  <h2 style="color:#6a1b9a;">📄 Documentation</h2>
+  <h2 style="color:#6a1b9a;">Documentation</h2>
   <ul>
     <li>Complete 15-page PDF manual included in the module</li>
     <li>Explains installation, models, AI setup, user roles and permissions</li>
@@ -96,7 +126,7 @@
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#1976d2;">⚙️ Technical Details</h2>
+  <h2 style="color:#1976d2;">Technical Details</h2>
   <ul>
     <li>Compatible with <strong>Odoo 18.0 Community & Enterprise</strong></li>
     <li>Main models: <code>gestio.equipo</code>, <code>gestio.empleat</code>, <code>gestio.prestec</code></li>
@@ -106,7 +136,7 @@
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#1976d2;">📦 Installation Instructions</h2>
+  <h2 style="color:#1976d2;">Installation Instructions</h2>
   <ol>
     <li>Copy the folder <code>gestio_equips_empleats</code> into your <code>addons</code> directory</li>
     <li>Restart your Odoo server</li>
@@ -116,9 +146,11 @@
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#1976d2;">🌟 Ideal For</h2>
+  <h2 style="color:#1976d2;">Ideal For</h2>
   <ul>
     <li>IT Departments managing multiple devices</li>
     <li>HR teams keeping control over equipment usage</li>
     <li>Companies with loan/return policies for remote workers</li>
-    <li>Schools, tech firms, NGOs
+    <li>Schools, tech firms, NGOs</li>
+  </ul>
+</section>
