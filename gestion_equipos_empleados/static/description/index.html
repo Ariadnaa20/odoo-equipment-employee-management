@@ -1,43 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Equipment & Employee Management + AI Module (Odoo 18)</title>
 <style>
+  body {
+    font-family: Arial, sans-serif;
+    color: #2c2c2c;
+    margin: 20px;
+    background: #f9f9f9;
+  }
+
+  .oe_container {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  }
+
+  h1, h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    color: #4a148c;
+  }
+
+  h2 {
+    color: #6a1b9a;
+  }
+
+  p {
+    text-align: center;
+    color: #3949ab;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  ul, ol {
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+
+  li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  code {
+    background-color: #eee;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+  }
+
   .oe_screenshot {
     display: block;
-    margin: 15px auto;
-    max-width: 90%;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px #ccc;
-  }
-
-  .oe_container ul {
-    padding-left: 20px;
-    margin-bottom: 20px;
-  }
-
-  .oe_container h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-
-  .oe_container p {
-    margin-bottom: 20px;
-  }
-
-  .centered-text {
-    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto 30px;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 0.1);
   }
 </style>
+</head>
+<body>
 
 <section class="oe_container">
-  <h1 class="centered-text" style="font-weight:bold; color:#4a148c;">
-    Equipment & Employee Management + AI Module (Odoo 18)
-  </h1>
-  <p class="centered-text" style="color:#3949ab;">
-    A complete and intelligent solution to manage IT assets, employee assignments, loan tracking, and AI-powered insights.
-  </p>
+  <h1>Equipment & Employee Management + AI Module (Odoo 18)</h1>
+  <p>A complete and intelligent solution to manage IT assets, employee assignments, loan tracking, and AI-powered insights.</p>
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#6a1b9a;">Key Functionalities</h2>
+  <h2>Key Functionalities</h2>
   <ul>
     <li>Manage all your equipment and assign them to employees</li>
     <li>Generate PDF loan reports and send via email</li>
@@ -51,52 +91,52 @@
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#4a148c;">Equipment Management</h2>
+  <h2>Equipment Management</h2>
   <ul>
     <li>Track devices such as laptops, monitors, phones, tablets...</li>
     <li>Store brand, model, supplier, purchase date, specs, and notes</li>
     <li>QR Code per equipment for quick access and inventory</li>
     <li>Assign equipment to employees and view change history</li>
   </ul>
-  <img src="equipment.png" alt="Equipment View" class="oe_screenshot">
-  <img src="EQUIPMENT QR.png" alt="Equipment QR" class="oe_screenshot">
+  <img src="equipment.png" alt="Equipment View" class="oe_screenshot" />
+  <img src="EQUIPMENT QR.png" alt="Equipment QR" class="oe_screenshot" />
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#4a148c;">Employee Management</h2>
+  <h2>Employee Management</h2>
   <ul>
     <li>Fully integrated with <code>hr.employee</code></li>
     <li>Visual overview of equipment assigned to each employee</li>
     <li>Extra fields to store roles and internal notes</li>
   </ul>
-  <img src="EMPLOYEE.png" alt="Employee View" class="oe_screenshot">
+  <img src="EMPLOYEE.png" alt="Employee View" class="oe_screenshot" />
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#4a148c;">🔁 Loan Management</h2>
+  <h2>🔁 Loan Management</h2>
   <ul>
     <li>Create loan records with delivery and return dates</li>
     <li>Export PDF loan report</li>
     <li>Send loan report via email with a single click</li>
     <li>Status and overview of current loans per device/employee</li>
   </ul>
-  <img src="LOANS.png" alt="Loan Management View" class="oe_screenshot">
-  <img src="PRINT REPORT.png" alt="Loan Report Example" class="oe_screenshot">
+  <img src="LOANS.png" alt="Loan Management View" class="oe_screenshot" />
+  <img src="PRINT REPORT.png" alt="Loan Report Example" class="oe_screenshot" />
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#4a148c;">AI Assistant with OpenAI</h2>
+  <h2>AI Assistant with OpenAI</h2>
   <ul>
     <li>OpenAI integration using your API Key</li>
     <li>Chat-style assistant to answer hardware or IT-related queries</li>
     <li>Helps identify device issues based on logs or comments</li>
     <li>Gives recommendations (e.g. repair, replacement)</li>
   </ul>
-  <img src="SEARCHIA.png" alt="AI Assistant Example" class="oe_screenshot">
+  <img src="SEARCHIA.png" alt="AI Assistant Example" class="oe_screenshot" />
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#6a1b9a;">Security & Roles</h2>
+  <h2>Security & Roles</h2>
   <ul>
     <li>Admin users: full access to create/edit/delete equipment and loans</li>
     <li>Consultant users: can only view assigned equipment and loans</li>
@@ -105,18 +145,17 @@
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#2e7d32;">Employee Digital Signature</h2>
+  <h2>Employee Digital Signature</h2>
   <ul>
     <li>Allows employees to digitally sign loan agreements</li>
     <li>Signature is stored as an image and linked to the loan record</li>
     <li>Visible in the loan form view and included in the PDF report</li>
     <li>Improves legal compliance and asset accountability</li>
   </ul>
-  <img src="firma.png" alt="Digital Signature Example" class="oe_screenshot">
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#6a1b9a;">Documentation</h2>
+  <h2>Documentation</h2>
   <ul>
     <li>Complete 15-page PDF manual included in the module</li>
     <li>Explains installation, models, AI setup, user roles and permissions</li>
@@ -126,7 +165,7 @@
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#1976d2;">Technical Details</h2>
+  <h2>Technical Details</h2>
   <ul>
     <li>Compatible with <strong>Odoo 18.0 Community & Enterprise</strong></li>
     <li>Main models: <code>gestio.equipo</code>, <code>gestio.empleat</code>, <code>gestio.prestec</code></li>
@@ -136,7 +175,7 @@
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#1976d2;">Installation Instructions</h2>
+  <h2>Installation Instructions</h2>
   <ol>
     <li>Copy the folder <code>gestio_equips_empleats</code> into your <code>addons</code> directory</li>
     <li>Restart your Odoo server</li>
@@ -146,7 +185,7 @@
 </section>
 
 <section class="oe_container">
-  <h2 style="color:#1976d2;">Ideal For</h2>
+  <h2>Ideal For</h2>
   <ul>
     <li>IT Departments managing multiple devices</li>
     <li>HR teams keeping control over equipment usage</li>
@@ -154,3 +193,6 @@
     <li>Schools, tech firms, NGOs</li>
   </ul>
 </section>
+
+</body>
+</html>
