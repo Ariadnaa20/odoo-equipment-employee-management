@@ -10,11 +10,11 @@ class Empleado(models.Model):
     email = fields.Char(string="Email", required=True)
     telefon = fields.Char(string="Telèfon", required=True)
     departament = fields.Selection([
-        ('it', 'Informàtica'),
-        ('rrhh', 'Recursos Humans'),
-        ('finances', 'Finances'),
-        ('logistica', 'Logística'),
-        ('altres', 'Altres')
+        ('it', 'IT'),
+        ('rrhh', 'Human Resources'),
+        ('finances', 'Finance'),
+        ('logistica', 'Logistics'),
+        ('altres', 'Others')
     ], string="Departament", default='altres', required=True)
     foto = fields.Image(string="Foto")
     prestamo_ids = fields.One2many('gestion.prestamo', 'empleado_id', string="Préstecs")
@@ -23,11 +23,19 @@ class Empleado(models.Model):
     def _check_required_fields(self):
         for record in self:
             missing = []
-            if not record.name: missing.append("Nom")
-            if not record.cognoms: missing.append("Cognoms")
-            if not record.email: missing.append("Email")
-            if not record.telefon: missing.append("Telèfon")
-            if not record.departament: missing.append("Departament")
-            if not record.foto: missing.append("Foto")
+            if not record.name:
+                missing.append("Name")
+            if not record.surname:
+                missing.append("Surname")
+            if not record.email:
+                missing.append("Email")
+            if not record.phone:
+                missing.append("Phone")
+            if not record.department:
+                missing.append("Department")
+            if not record.photo:
+                missing.append("Photo")
             if missing:
-                raise exceptions.ValidationError(f"Falten camps obligatoris: {', '.join(missing)}")
+                raise exceptions.ValidationError(
+                    f"Missing required fields: {', '.join(missing)}"
+                )

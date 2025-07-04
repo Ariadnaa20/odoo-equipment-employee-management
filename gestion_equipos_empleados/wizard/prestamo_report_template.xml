@@ -14,7 +14,7 @@
                     <!-- Title -->
                     <h2 style="text-align: center; margin: 20px 0 30px 0;">Loan Report</h2>
 
-                    <!-- Data table -->
+                    <!-- Data Table -->
                     <table style="width: 80%; margin: 0 auto 30px auto; border-collapse: collapse; font-size: 13px;">
                         <tr style="height: 30px;">
                             <td style="font-weight: bold; width: 30%;">Equipment:</td>
@@ -37,12 +37,12 @@
                             <td><t t-esc="prestec.estado"/></td>
                         </tr>
                         <tr style="height: 30px;">
-                            <td style="font-weight: bold; vertical-align: top;">Observations:</td>
+                            <td style="font-weight: bold; vertical-align: top;">Remarks:</td>
                             <td><t t-esc="prestec.observacions or '—'"/></td>
                         </tr>
                     </table>
 
-                    <!-- Generation date -->
+                    <!-- Generation Date -->
                     <div style="width: 80%; margin: 0 auto;">
                         <p style="text-align: right;">
                             <strong>Generation Date:</strong>

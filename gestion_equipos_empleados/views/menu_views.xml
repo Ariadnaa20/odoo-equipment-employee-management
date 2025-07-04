@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Main Menu -->
+    <!-- Menú principal -->
     <menuitem id="menu_gestio_equips_root"
               name="Equipment Management"
               sequence="10"/>
 
-    <!-- Action: Equipment -->
+    <!-- Acció: Equips -->
     <record id="action_equipo" model="ir.actions.act_window">
         <field name="name">Equipment</field>
         <field name="res_model">gestion.equipo</field>
@@ -18,7 +18,7 @@
               action="action_equipo"
               sequence="20"/>
 
-    <!-- Action: Loans -->
+    <!-- Acció: Préstecs -->
     <record id="action_prestamo" model="ir.actions.act_window">
         <field name="name">Loans</field>
         <field name="res_model">gestion.prestamo</field>
@@ -31,7 +31,7 @@
               action="action_prestamo"
               sequence="30"/>
 
-    <!-- Action: Employees -->
+    <!-- Acció: Empleats -->
     <record id="action_empleado" model="ir.actions.act_window">
         <field name="name">Employees</field>
         <field name="res_model">gestion.empleado</field>
@@ -44,7 +44,7 @@
               action="action_empleado"
               sequence="40"/>
 
-    <!-- ✅ Action: AI Search -->
+    <!-- ✅ Acció: Busqueda IA -->
     <record id="action_busqueda_ia" model="ir.actions.act_window">
         <field name="name">Search with AI</field>
         <field name="res_model">gestion.busqueda.ia</field>
@@ -52,9 +52,9 @@
         <field name="target">new</field>
     </record>
 
-    <!-- ✅ Menu: AI Search -->
+    <!-- ✅ Menú: Busqueda IA -->
     <menuitem id="menu_gestio_equips_busqueda_ia"
-              name="AI Search"
+              name="Search with AI"
               parent="menu_gestio_equips_root"
               action="action_busqueda_ia"
               sequence="50"/>

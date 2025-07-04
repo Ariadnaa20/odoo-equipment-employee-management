@@ -10,7 +10,7 @@ class BusquedaIA(models.TransientModel):
 
     def buscar_con_ia(self):
         try:
-            api_key = ""  # Substitueix-la per la teva clau real
+            api_key = ""
             url = "https://api.openai.com/v1/chat/completions"
 
             headers = {

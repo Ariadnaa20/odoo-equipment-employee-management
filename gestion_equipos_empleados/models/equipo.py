@@ -15,21 +15,22 @@ class Equipo(models.Model):
     qr_image = fields.Binary("Codi QR")  # NO compute ni store
 
     tipo = fields.Selection([
-        ('portatil', 'Portàtil'),
-        ('monitor', 'Monitor'),
-        ('raton', 'Ratolí'),
-        ('teclado', 'Teclat'),
-        ('auriculars', 'Auriculars'),
-        ('projector', 'Projector'),
-        ('altre', 'Altres')
-    ], string="Tipus d'Equip", default='altre', required=True)
+    ('portatil', 'Laptop'),
+    ('monitor', 'Monitor'),
+    ('raton', 'Mouse'),
+    ('teclado', 'Keyboard'),
+    ('auriculars', 'Headphones'),
+    ('projector', 'Projector'),
+    ('altre', 'Others')
+    ], string="Type of Equipment", default='altre', required=True)
 
     estado = fields.Selection([
-        ('disponible', 'Disponible'),
-        ('prestado', 'En Préstec'),
-        ('mantenimiento', 'En Manteniment'),
-        ('baixa', 'Donat de Baixa')
-    ], string="Estat", default='disponible', required=True)
+    ('disponible', 'Available'),
+    ('prestado', 'On Loan'),
+    ('mantenimiento', 'Under Maintenance'),
+    ('baixa', 'Discarded')
+    ], string="Status", default='disponible', required=True)
+
 
     fecha_alta = fields.Date(string="Data d'Alta", default=fields.Date.today, required=True)
     descripcion = fields.Text(string="Descripció")

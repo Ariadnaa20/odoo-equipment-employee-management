@@ -12,7 +12,7 @@
                             <img t-att-src="'data:image/png;base64,%s' % equipo.qr_image.decode()" style="max-width: 150px;"/>
                         </t>
                         <t t-else="">
-                            <p style="color: gray;">QR code not available</p>
+                            <p style="color: gray;">QR Code not available</p>
                         </t>
                     </div>
 

@@ -11,10 +11,10 @@ class Prestamo(models.Model):
     fecha_inicio = fields.Date(string="Data d'Inici", required=True, default=fields.Date.today)
     fecha_fin = fields.Date(string="Data de Retorn")
     estado = fields.Selection([
-        ('activo', 'Actiu'),
-        ('devuelto', 'Retornat'),
-        ('retrasado', 'Endarrerit')
-    ], string="Estat", default='activo')
+        ('activo', 'Active'),
+        ('devuelto', 'Active'),
+        ('retrasado', 'Active')
+    ], string="Status", default='activo')
     observacions = fields.Text(string="Observacions")
     display_name = fields.Char(string="Nom visual", compute="_compute_display_name", store=True)
     signature = fields.Binary(string="Signatura")

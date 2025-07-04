@@ -1,8 +1,8 @@
 {
-    'name': "Gestió d'Equips i Empleats",
-    'version': '16.0.1.0.0',
-    'summary': "Gestió d'equips informàtics i préstecs a empleats",
-    'description': "Gestió d'equips, préstecs, empleats i enviament d'informes.",
+    'name': "IT Equipment and Employee Management",
+    'version': '16.0',
+    'summary': "Manage IT equipment and employee loans",
+    'description': "Manage IT devices, loans, employees, and send reports.",
     'author': "Ariadna Pascual",
     'category': 'Asset Management',
     'license': 'LGPL-3',
@@ -28,5 +28,6 @@
     'auto_install': False,
     'images': ['static/description/banner.png'],
     'price': 99.99,
-    'currency': 'EUR',
+    'currency': 'EUR'
+
 }
