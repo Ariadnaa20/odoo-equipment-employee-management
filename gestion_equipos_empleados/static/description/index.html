@@ -1,79 +1,111 @@
 <section class="oe_container">
-  <h1 style="text-align:center; font-weight:bold;">🎯 Equipment & Employee Management + AI Module (Odoo 18)</h1>
-  <p style="text-align:center;">A complete solution to manage IT equipment, employee assignments, loans, and AI-powered suggestions.</p>
+  <h1 style="text-align:center; font-weight:bold; color:#4a148c;">
+    🎯 Equipment & Employee Management + AI Module (Odoo 18)
+  </h1>
+  <p style="text-align:center; color:#3949ab;">
+    A complete and intelligent solution to manage IT assets, employee assignments, loan tracking, and AI-powered insights.
+  </p>
 </section>
 
 <section class="oe_container">
-  <h2>🔧 Key Features</h2>
-</section>
-
-<section class="oe_container">
-  <h3>✅ Equipment Management</h3>
+  <h2 style="color:#6a1b9a;">🔧 Key Functionalities</h2>
   <ul>
-    <li>Register all types of devices: laptops, phones, tablets, monitors, etc.</li>
-    <li>Detailed information: type, brand, model, serial number, supplier, purchase date, specs, and more.</li>
-    <li>Assign equipment directly to employees with tracking history.</li>
-    <li>Log technical issues or notes per device.</li>
+    <li>✅ Manage all your equipment and assign them to employees</li>
+    <li>✅ Generate PDF loan reports and send via email</li>
+    <li>✅ Integrated with OpenAI to assist with hardware-related questions</li>
+    <li>✅ User roles: Administrator vs Consultant with distinct permissions</li>
+    <li>✅ QR Code auto-generated for each equipment item</li>
+    <li>✅ Security configured via <code>security.xml</code> and <code>ir.model.access.csv</code></li>
+    <li>✅ Fully documented module (15-page PDF with install steps, code structure, AI integration, tests, QWeb, etc.)</li>
   </ul>
-  <img src="equips.png" alt="Equipment Form View" class="oe_screenshot">
 </section>
 
 <section class="oe_container">
-  <h3>👩‍💼 Employee Management</h3>
+  <h2 style="color:#4a148c;">💻 Equipment Management</h2>
   <ul>
-    <li>Integrated with Odoo’s HR module (`hr.employee`).</li>
-    <li>See which devices are assigned to each employee.</li>
-    <li>Custom fields for roles, notes, and related hardware.</li>
+    <li>Track devices such as laptops, monitors, phones, tablets...</li>
+    <li>Store brand, model, supplier, purchase date, specs, and notes</li>
+    <li>QR Code per equipment for quick access and inventory</li>
+    <li>Assign equipment to employees and view change history</li>
+  </ul>
+  <img src="equips.png" alt="Equipment View" class="oe_screenshot">
+</section>
+
+<section class="oe_container">
+  <h2 style="color:#4a148c;">👩‍💼 Employee Management</h2>
+  <ul>
+    <li>Fully integrated with <code>hr.employee</code></li>
+    <li>Visual overview of equipment assigned to each employee</li>
+    <li>Extra fields to store roles and internal notes</li>
   </ul>
   <img src="empleados.png" alt="Employee View" class="oe_screenshot">
 </section>
 
 <section class="oe_container">
-  <h3>🔁 Loan Management</h3>
+  <h2 style="color:#4a148c;">🔁 Loan Management</h2>
   <ul>
-    <li>Track temporary device loans to employees.</li>
-    <li>Start and return dates with status updates.</li>
-    <li>Clear overview of who has which device and for how long.</li>
+    <li>Create loan records with delivery and return dates</li>
+    <li>Export PDF loan report</li>
+    <li>Send loan report via email with a single click</li>
+    <li>Status and overview of current loans per device/employee</li>
   </ul>
-  <img src="prestamos.png" alt="Loan Form View" class="oe_screenshot">
+  <img src="prestamos.png" alt="Loan Management View" class="oe_screenshot">
 </section>
 
 <section class="oe_container">
-  <h3>🤖 AI Assistance (Optional)</h3>
+  <h2 style="color:#4a148c;">🤖 AI Assistant with OpenAI</h2>
   <ul>
-    <li>Basic device health analysis (e.g. based on age or issues).</li>
-    <li>AI recommendations for replacements or updates.</li>
-    <li>Scans comments for repeated technical problems.</li>
+    <li>OpenAI integration using your API Key</li>
+    <li>Chat-style assistant to answer hardware or IT-related queries</li>
+    <li>Helps identify device issues based on logs or comments</li>
+    <li>Gives recommendations (e.g. repair, replacement)</li>
   </ul>
-  <img src="ia.png" alt="AI Suggestion Example" class="oe_screenshot">
+  <img src="ia.png" alt="AI Assistant Example" class="oe_screenshot">
 </section>
 
 <section class="oe_container">
-  <h2>⚙️ Technical Details</h2>
+  <h2 style="color:#6a1b9a;">🔐 Security & Roles</h2>
   <ul>
-    <li>Compatible with <strong>Odoo 18.0 Community and Enterprise</strong>.</li>
-    <li>Main models: <code>gestio.equipo</code>, <code>gestio.empleat</code>, <code>gestio.prestec</code>.</li>
-    <li>Fully integrated with the <code>hr.employee</code> model.</li>
-    <li>Easy to extend with Inventory, HR, or Helpdesk modules.</li>
+    <li>Admin users: full access to create/edit/delete equipment and loans</li>
+    <li>Consultant users: can only view assigned equipment and loans</li>
+    <li>Access rights defined in <code>security.xml</code> and <code>ir.model.access.csv</code></li>
   </ul>
 </section>
 
 <section class="oe_container">
-  <h2>📦 Installation</h2>
+  <h2 style="color:#6a1b9a;">📄 Documentation</h2>
+  <ul>
+    <li>Complete 15-page PDF manual included in the module</li>
+    <li>Explains installation, models, AI setup, user roles and permissions</li>
+    <li>Shows QWeb loan reports and how to send them via email</li>
+    <li>Includes testing instructions for proper usage and validation</li>
+  </ul>
+</section>
+
+<section class="oe_container">
+  <h2 style="color:#1976d2;">⚙️ Technical Details</h2>
+  <ul>
+    <li>Compatible with <strong>Odoo 18.0 Community & Enterprise</strong></li>
+    <li>Main models: <code>gestio.equipo</code>, <code>gestio.empleat</code>, <code>gestio.prestec</code></li>
+    <li>Easy to extend with Inventory, Helpdesk or HR modules</li>
+    <li>Clean and modular code following Odoo guidelines</li>
+  </ul>
+</section>
+
+<section class="oe_container">
+  <h2 style="color:#1976d2;">📦 Installation Instructions</h2>
   <ol>
-    <li>Copy the module into your <code>addons</code> folder.</li>
-    <li>Restart your Odoo server.</li>
-    <li>Enable Developer Mode.</li>
-    <li>Search for <strong>gestio_equips_empleats</strong> and install it.</li>
+    <li>Copy the folder <code>gestio_equips_empleats</code> into your <code>addons</code> directory</li>
+    <li>Restart your Odoo server</li>
+    <li>Activate Developer Mode</li>
+    <li>Search for <strong>Gestió d'equips i empleats</strong> in Apps and click "Install"</li>
   </ol>
 </section>
 
 <section class="oe_container">
-  <h2>🧠 Why Use This Module?</h2>
+  <h2 style="color:#1976d2;">🌟 Ideal For</h2>
   <ul>
-    <li>Ideal for IT or HR departments that need to manage hardware efficiently.</li>
-    <li>Perfect for companies with equipment rotation or loan processes.</li>
-    <li>Designed for tech companies, schools, government entities, or remote teams.</li>
-    <li>Optional AI features help you decide when to renew or replace devices.</li>
-  </ul>
-</section>
+    <li>IT Departments managing multiple devices</li>
+    <li>HR teams keeping control over equipment usage</li>
+    <li>Companies with loan/return policies for remote workers</li>
+    <li>Schools, tech firms, NGOs
