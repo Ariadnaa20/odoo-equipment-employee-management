@@ -4,7 +4,7 @@
     'summary': "Gestió d'equips informàtics i préstecs a empleats",
     'description': "Gestió d'equips, préstecs, empleats i enviament d'informes.",
     'author': "Ariadna Pascual",
-    'category': 'Tools',
+    'category': 'Asset Management',
     'license': 'LGPL-3',
     'depends': ['base', 'mail'],
     'data': [
